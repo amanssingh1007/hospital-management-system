@@ -1,0 +1,191 @@
+/* Doctor Summary */
+.admin-doctors-page .admin-doctor-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 280px));
+  gap: 20px;
+  margin: 28px 0;
+}
+
+.admin-doctors-page .admin-doctor-summary-card {
+  background: #FFFFFF;
+  border: 1px solid #E4E7EC;
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.admin-doctors-page .admin-doctor-summary-card span {
+  color: #667085;
+  font-size: 15px;
+}
+
+.admin-doctors-page .admin-doctor-summary-card h2 {
+  color: #123B5D;
+  font-size: 32px;
+  margin: 12px 0 0;
+}
+
+/* Doctor Search */
+.admin-doctors-page .admin-doctor-search {
+  width: 100%;
+  max-width: 550px;
+  margin: 24px 0;
+}
+
+.admin-doctors-page .admin-doctor-search input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #D0D5DD;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  background: #FFFFFF;
+  box-sizing: border-box;
+}
+
+.admin-doctors-page .admin-doctor-search input:focus {
+  border-color: #168C91;
+  box-shadow: 0 0 0 3px rgba(22, 140, 145, 0.12);
+}
+
+/* Doctor Grid */
+.admin-doctors-page .admin-doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 22px;
+  margin-top: 24px;
+}
+
+/* Doctor Card */
+.admin-doctors-page .admin-doctor-card {
+  background: #FFFFFF;
+  border: 1px solid #E4E7EC;
+  border-radius: 14px;
+  padding: 24px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-doctors-page .admin-doctor-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(16, 24, 40, 0.08);
+}
+
+.admin-doctors-page .admin-doctor-card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.admin-doctors-page .admin-doctor-avatar {
+  width: 54px;
+  height: 54px;
+  min-width: 54px;
+  border-radius: 50%;
+  background: #E6F5F4;
+  color: #168C91;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.admin-doctors-page .admin-doctor-details h3 {
+  font-size: 19px;
+  color: #1D2939;
+  margin: 0 0 6px;
+}
+
+.admin-doctors-page .admin-doctor-details p {
+  color: #168C91;
+  font-size: 15px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.admin-doctors-page .admin-doctor-info {
+  border-top: 1px solid #EAECF0;
+  padding-top: 16px;
+}
+
+.admin-doctors-page .admin-doctor-info p {
+  font-size: 15px;
+  color: #667085;
+  margin: 10px 0;
+  overflow-wrap: anywhere;
+}
+
+.admin-doctors-page .admin-doctor-info strong {
+  color: #344054;
+}
+
+/* Doctors Page Sidebar Navigation */
+.admin-doctors-page .admin-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-doctors-page .admin-sidebar-nav button {
+  width: 100%;
+  padding: 13px 16px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: #FFFFFF;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.admin-doctors-page .admin-sidebar-nav button:hover,
+.admin-doctors-page .admin-sidebar-nav button.active {
+  background: #245477;
+  color: #FFFFFF;
+}
+
+.admin-doctors-page .admin-logout-btn {
+  width: 100%;
+  padding: 13px 16px;
+  margin-top: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.admin-doctors-page .admin-logout-btn:hover {
+  background: #245477;
+}
+
+/* Empty State */
+.admin-doctors-page .admin-empty-state {
+  background: #FFFFFF;
+  border: 1px dashed #D0D5DD;
+  border-radius: 12px;
+  padding: 35px;
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+.admin-doctors-page .admin-empty-state h3 {
+  color: #1D2939;
+  font-size: 20px;
+}
+
+.admin-doctors-page .admin-empty-state p {
+  color: #667085;
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  .admin-doctors-page .admin-doctor-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-doctors-page .admin-doctor-card {
+    padding: 18px;
+  }
+}

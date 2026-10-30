@@ -1,0 +1,152 @@
+
+.footer {
+  background: #0B2942;
+  color: white;
+  padding: 75px 0 0;
+  width: 100%;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.2fr 1.4fr;
+  gap: 45px;
+  padding-bottom: 55px;
+}
+
+/* Brand */
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+}
+
+.footer-logo-icon {
+  width: 46px;
+  height: 46px;
+  background: var(--accent);
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo h2 {
+  color: white;
+  font-size: 23px;
+}
+
+.footer-logo span {
+  color: #AABAC8;
+  font-size: 9px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.footer-brand > p {
+  color: #B8C7D4;
+  font-size: 13px;
+  line-height: 1.9;
+  margin-top: 23px;
+  max-width: 330px;
+}
+
+/* Footer Columns */
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.footer-column h3 {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.footer-column > a {
+  color: #B8C7D4;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+.footer-column > a:hover {
+  color: #76D5CD;
+  transform: translateX(4px);
+}
+
+/* Contact */
+
+.footer-contact > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  color: #B8C7D4;
+  font-size: 12px;
+}
+
+.footer-contact svg {
+  color: #76D5CD;
+  flex-shrink: 0;
+}
+
+/* Bottom */
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.14);
+  padding: 23px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  color: #AABAC8;
+  font-size: 12px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .footer-main {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 520px) {
+  .footer {
+    padding-top: 55px;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.footer-column > a {
+  font-size: 15px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+}
+
+.footer-brand > p {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.footer-contact > div {
+  font-size: 14px;
+}
+
+.footer-bottom {
+  font-size: 14px;
+}

@@ -1,0 +1,351 @@
+
+.patient-profile-page {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background: #f4f8fb;
+}
+
+/* SIDEBAR */
+
+.patient-profile-sidebar {
+  width: 260px;
+  min-width: 260px;
+  background: #123b5d;
+  color: #ffffff;
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.patient-profile-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 10px 35px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.patient-profile-brand h2 {
+  font-size: 23px;
+  margin: 0;
+}
+
+.patient-profile-brand span {
+  display: block;
+  margin-top: 4px;
+  font-size: 11px;
+  letter-spacing: 1.2px;
+  color: #c6d8e6;
+}
+
+.patient-profile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 35px;
+}
+
+.patient-profile-nav a,
+.patient-profile-logout {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 15px;
+  border-radius: 9px;
+  color: #dce8f1;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.patient-profile-nav a:hover,
+.patient-profile-nav a.active {
+  background: #1d5279;
+  color: #ffffff;
+}
+
+.patient-profile-logout {
+  margin-top: auto;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
+  font-family: inherit;
+}
+
+.patient-profile-logout:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* MAIN CONTENT */
+
+.patient-profile-main {
+  flex: 1;
+  min-width: 0;
+  padding: 38px 5%;
+}
+
+.patient-profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.patient-profile-header h1 {
+  color: #123b5d;
+  font-size: 32px;
+  margin: 0 0 8px;
+}
+
+.patient-profile-header p {
+  color: #667085;
+  font-size: 16px;
+  margin: 0;
+}
+
+.patient-profile-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #168c91;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.patient-profile-back:hover {
+  color: #123b5d;
+}
+
+/* PROFILE CARD */
+
+.patient-profile-card {
+  max-width: 1100px;
+  background: #ffffff;
+  border: 1px solid #e5edf3;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 5px 20px rgba(18, 59, 93, 0.04);
+}
+
+.patient-profile-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #e8edf2;
+}
+
+.patient-profile-avatar {
+  width: 72px;
+  height: 72px;
+  min-width: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e6f5f4;
+  color: #168c91;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.patient-profile-card-heading h2 {
+  margin: 0 0 6px;
+  color: #123b5d;
+  font-size: 23px;
+}
+
+.patient-profile-card-heading p {
+  margin: 0;
+  color: #667085;
+  font-size: 15px;
+}
+
+.patient-profile-form-heading {
+  margin: 28px 0 24px;
+}
+
+.patient-profile-form-heading h2 {
+  margin: 0 0 7px;
+  color: #123b5d;
+  font-size: 21px;
+}
+
+.patient-profile-form-heading p {
+  margin: 0;
+  color: #667085;
+  font-size: 15px;
+}
+
+/* FORM */
+
+.patient-profile-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.patient-profile-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.patient-profile-field.full-width {
+  grid-column: 1 / -1;
+}
+
+.patient-profile-field label {
+  color: #344054;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.patient-profile-field input,
+.patient-profile-field select,
+.patient-profile-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 15px;
+  border: 1px solid #d0dbe5;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #1d2939;
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.patient-profile-field input,
+.patient-profile-field select {
+  min-height: 49px;
+}
+
+.patient-profile-field textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.patient-profile-field input:focus,
+.patient-profile-field select:focus,
+.patient-profile-field textarea:focus {
+  border-color: #168c91;
+  box-shadow: 0 0 0 3px rgba(22, 140, 145, 0.1);
+}
+
+.patient-profile-field input[readonly] {
+  background: #f2f5f8;
+  color: #667085;
+  cursor: not-allowed;
+}
+
+/* MESSAGES */
+
+.patient-profile-success,
+.patient-profile-error {
+  padding: 13px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.patient-profile-success {
+  background: #e3f6eb;
+  color: #087443;
+}
+
+.patient-profile-error {
+  background: #feeceb;
+  color: #b42318;
+}
+
+/* SAVE BUTTON */
+
+.patient-profile-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid #e8edf2;
+}
+
+.patient-profile-actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 13px 24px;
+  border: none;
+  border-radius: 9px;
+  background: #168c91;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.patient-profile-actions button:hover {
+  background: #117579;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+  .patient-profile-sidebar {
+    width: 220px;
+    min-width: 220px;
+  }
+
+  .patient-profile-main {
+    padding: 28px 3%;
+  }
+
+  .patient-profile-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .patient-profile-page {
+    flex-direction: column;
+  }
+
+  .patient-profile-sidebar {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .patient-profile-nav {
+    margin-top: 20px;
+  }
+
+  .patient-profile-logout {
+    margin-top: 15px;
+  }
+
+  .patient-profile-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .patient-profile-field.full-width {
+    grid-column: auto;
+  }
+
+  .patient-profile-card {
+    padding: 20px;
+  }
+
+  .patient-profile-header h1 {
+    font-size: 27px;
+  }
+}
