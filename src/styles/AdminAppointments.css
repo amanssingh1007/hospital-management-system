@@ -219,3 +219,89 @@
     box-sizing: border-box;
   }
 }
+
+/* Admin Appointments Layout Fix */
+.admin-appointments-page {
+  min-width: 0;
+}
+
+.admin-appointments-page .admin-main {
+  min-width: 0;
+  overflow-x: hidden;
+}
+
+/* Sidebar Navigation */
+.admin-appointments-page .admin-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-appointments-page .admin-sidebar-nav button {
+  width: 100%;
+  padding: 13px 16px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: #FFFFFF;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.admin-appointments-page .admin-sidebar-nav button:hover,
+.admin-appointments-page .admin-sidebar-nav button.active {
+  background: #245477;
+  color: #FFFFFF;
+}
+
+.admin-appointments-page .admin-logout-btn {
+  width: 100%;
+  padding: 13px 16px;
+  margin-top: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Statistics Cards */
+.admin-appointments-page .admin-appointment-stats {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.admin-appointments-page .admin-appointment-stat-card {
+  min-width: 0;
+}
+
+/* Appointment Details */
+.admin-appointments-page .admin-appointment-details {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.admin-appointments-page .admin-appointment-details div {
+  min-width: 0;
+}
+
+@media (max-width: 1100px) {
+  .admin-appointments-page .admin-appointment-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-appointments-page .admin-appointment-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-appointments-page .admin-appointment-details {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

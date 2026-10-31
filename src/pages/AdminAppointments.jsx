@@ -48,7 +48,7 @@ function AdminAppointments() {
   }
 
   return (
-    <div className="admin-dashboard">
+   <div className="admin-dashboard admin-appointments-page">
       <aside className="admin-sidebar">
         <div className="admin-sidebar-brand">
           <h2>MediCare</h2>
